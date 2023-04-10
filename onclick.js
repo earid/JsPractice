@@ -13,20 +13,14 @@ function rmvClass() {
     }
 
 }
-
 // date calculation
-// Hide button after click 
-<button onclick="hideBtn(this)">Click Me to Hide</button>
-function hideBtn(x) {
-    x.style.display = 'none'
-}
-// remove all Class 
-function rmvClass() {
-    let allElements = document.querySelectorAll('.text');
-    for (i = 0; allElements.length; i++) {
-        {
-            allElements[i].classList.remove('text');
-        }
-    }
+function calDate() {
+    let d1 = document.getElementById('d1').value;
+    let d2 = document.getElementById('d2').value;
+    const date1 = new Date(d1);
+    const date2 = new Date(d2);
+    const time = Math.abs(date2 - date1);
+    const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+    document.getElementById('output').innerHTML = days;
 
 }
