@@ -24,3 +24,10 @@ function calDate() {
     document.getElementById('output').innerHTML = days;
 
 }
+// select id with similar name 
+function getElm() {
+    var tags = document.querySelectorAll('*[id^="htc"]');
+    for (i = 0; i < tags.length; i++) {
+        tags.item(i).style.backgroundColor = 'red'
+    }
+}
