@@ -6,7 +6,7 @@ function hideBtn(x) {
 // remove all Class 
 function rmvClass() {
     let allElements = document.querySelectorAll('.text');
-    for (i = 0; allElements.length; i++) {
+    for (i = 0; i < allElements.length; i++) {
         {
             allElements[i].classList.remove('text');
         }
