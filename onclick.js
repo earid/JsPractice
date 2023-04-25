@@ -31,3 +31,7 @@ function getElm() {
         tags.item(i).style.backgroundColor = 'red'
     }
 }
+// add a class
+function addClass() {
+    document.getElementById('demo').className = "text"
+}
