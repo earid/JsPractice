@@ -12,7 +12,9 @@ fetch('https://fakestoreapi.com/products/').then((data) => {
     })
     document.getElementById('tBody').innerHTML = tableData
 }
-)
+).catch((err) => {
+    console.log(err)
+})
 
 
 <h1 class="text-center"> Data Table</h1>
