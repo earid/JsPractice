@@ -35,3 +35,11 @@ function getElm() {
 function addClass() {
     document.getElementById('demo').className = "text"
 }
+
+// Change BG color
+function chColor() {
+    var colors = document.getElementById('color').value;
+    var body = document.getElementsByTagName('body')[0];
+
+    body.style.backgroundColor = colors;
+}
